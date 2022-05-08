@@ -1,9 +1,14 @@
-import HelloWorld from '../components/hello-world'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
-    <div className="app">
-      <HelloWorld />
-    </div>
+    <motion.div 
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={pageVariants}
+    className='home-page'>
+        
+    </motion.div>
   )
 }

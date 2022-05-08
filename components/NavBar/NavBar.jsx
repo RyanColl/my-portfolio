@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './NavBar.css';
+
 import AppsSharpIcon from '@mui/icons-material/AppsSharp';
 import BuildSharpIcon from '@mui/icons-material/BuildSharp';
 import FaceSharpIcon from '@mui/icons-material/FaceSharp';

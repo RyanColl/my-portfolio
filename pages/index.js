@@ -1,14 +1,24 @@
 import { motion } from 'framer-motion'
+import LoadingPage from '../components/Loading/LoadingPAge'
+import { pageVariants } from './_app'
 
-export default function Home() {
+export default function Index() {
   return (
-    <motion.div 
-    initial="initial"
-    animate="in"
-    exit="out"
-    variants={pageVariants}
-    className='home-page'>
-        
-    </motion.div>
+    <IndexComponent />
+  )
+}
+
+const IndexComponent = () => {
+  return (
+    <LoadingPage>
+      <motion.div 
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      className='home-page'>
+          home page
+      </motion.div>
+    </LoadingPage>
   )
 }

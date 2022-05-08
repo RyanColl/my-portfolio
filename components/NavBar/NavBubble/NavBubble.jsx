@@ -1,7 +1,7 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const NavBubble = (props) => {
     const {id, Icon, toolTipText, iconColor, bgColor, bubbleClick} = props;
     const {
@@ -21,7 +21,7 @@ const NavBubble = (props) => {
         //@ts-ignore
         style={style}
       >
-        <Link to={'/about'} onClick={(e) => {
+        <Link href='/about' onClick={(e) => {
             bubbleClick(e, toolTipText);
           }}>
           <div

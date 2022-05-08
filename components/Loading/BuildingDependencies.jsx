@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from 'react'
-import './cube.scss';
+
 import { motion } from 'framer-motion';
-import { pageVariants } from '../App';
-import { Context } from '../Context/Store';
+import { pageVariants } from '../../pages/_app';
+import { Context } from '../../context/Store';
 
 const loadingVariants = {
   initial: {
